@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: black;
+	color: white;
+	text-align: center;
+}
+.div_left, .div_right{
+	display: inline-block;
+	border: 2px solid white;
+	border-radius: 15px;
+	width: 200px;
+	text-align: center;
+	padding: 10px 15px;
+	margin-top: 40vh;
+	margin-right: 100px;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.div_left:hover, .div_right:hover{
+	background: white;
+	transition: all 0.2s ease;
+	color: black;
+}
+.div_left.active, .div_right.active{
+	opacity: 0.3;
+	transform: scale(0.9);
+	transition: all 0.2s ease;
+}
+.div_left h1, .div_right h1{
+	font-family: arial;
+	font-size: 50px;
+	font-weight: normal;
